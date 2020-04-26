@@ -1,0 +1,135 @@
+.notification-content{
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(25,4%);
+    grid-template-rows: repeat(25,4%);      
+
+}
+
+/* UPCOMING */
+.not-upcoming{
+    grid-column: 2 /span 9;
+    grid-row: 2 / span 12;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(18,1fr); 
+    grid-template-rows: 10% 10% 35% 5% 35% 5%;
+}
+.upcoming-header{
+    grid-column: 2 / span 16;
+    grid-row: 1 / span 1;
+
+}
+.upcoming-card-1{
+    background-color: darkgoldenrod;
+    grid-column: 2 / span 16;
+    grid-row: 3 / span 1;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+}
+.card-1-color{
+    background-color: #a6790c;
+    
+}
+.card-2-color{
+    background-color: #a6a160;
+    
+}
+.card-3-color{
+    background-color: #e6fbfc;
+    
+}
+.card-4-color{
+    background-color: #edfcf4;
+    
+}
+.card-logo{
+    height: 100%;
+    grid-column: 1 / span 3 ;
+}
+.card-content{
+    margin-left: 10px;
+    height: 100%;
+    grid-column: 4   / last-line ;
+}
+.upcoming-card-2{
+    background-color: darkkhaki;
+    grid-column: 2 / span 16;
+    grid-row: 5 /span 1;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+}
+/* 
+/* UPCOMING END */
+/* DATES */
+.not-dates{
+    grid-column: 2 /span 9;
+    grid-row: 13 / span 12;
+    display: grid;
+    grid-template-columns: repeat(18,1fr); 
+    grid-template-rows: 10% 10% 35% 5% 35% 5%;
+
+}
+.dates-header{
+    grid-column: 2 / span 16;
+    grid-row: 1 / span 1;
+
+}
+.start-date{
+    grid-column: 2 / span 16;
+    grid-row: 3 /span 1;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+}
+.end-date{
+    grid-column: 2 / span 16;
+    grid-row: 5 /span 1;   
+    display: grid;
+    grid-template-columns: repeat(10,1fr); 
+}
+/* DATES END */
+/* LATEST */
+.not-latest{
+    grid-column: 11 /span 13;
+    grid-row: 2 / span 23;
+    display: grid;
+    grid-template-columns: repeat(18,1fr); 
+    grid-template-rows: 5% 5% auto 2.5%;   
+}
+.latest-header{
+    grid-column: 1 / span 16;
+    grid-row: 1 / span 1;
+}
+.latest-table{
+    grid-column: 1 / last-line;
+    grid-row: 3 / span 1;
+}
+/* LATEST END */
+.not-img-irig{
+    display: block;
+    margin: auto;
+    padding: 15px;
+    max-width: 70%;
+    max-height: 70%;
+}
+.not-img-bri{
+    display: block;
+    margin: auto;
+    padding: 25px;
+    max-width: 40%;
+    max-height: 60%;
+}
+.not-img-date{
+    display: block;
+    margin: auto;
+    padding: 30px;
+    max-width: 40%;
+    max-height: 40%;
+}
+.not-img-end{
+    display: block;
+    margin: auto;
+    padding: 30px;
+    max-width: 40%;
+    max-height: 40%;
+}
