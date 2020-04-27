@@ -29,14 +29,20 @@
     grid-row: 5 /span 1;
   }
   .s-logo{
+    align-self: center;
+
       margin-left: 10px;
       grid-column: 1 / span 1;
   }
   .s-content{
+    align-self: center;
+
     margin-left: 10px ; 
     grid-column: 2 / span 1;
   }
   .s-dot{
+    align-self: center;
+
     grid-column: 3 / span 1;
   }
   .s-img{
@@ -46,5 +52,13 @@
   .dot-img{
     width: 30%;
     height: 10%;
+  }
+  .r-link{
+    text-decoration: none;
+    
+  }
+  .r-link:hover{
+    background-color: #35383d;
+    opacity: 1;
   }
   /* SIDEBAR END */

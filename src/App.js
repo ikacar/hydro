@@ -7,6 +7,10 @@ import Parameters from './Components/Parameters/Parameters'
 import Tasks from './Components/Tasks/Tasks'
 import Camera from './Components/Camera/Camera'
 import LogoImg from './Components/Header/Images/logo.png'
+import {
+  BrowserRouter as Router,
+  Route
+} from "react-router-dom";
 function App() {
   return (
     <div className='App'>
@@ -21,21 +25,17 @@ function App() {
           Settings
         </div>
       </div>
+      <Router>
       <Sidebar className='sidebar medium-shadow'/>
-
-      <div className='dashboard'>
-        <Notification/>
-        {/* <div className='notification'>Notification Content</div>
-        <div className='parameters'>Parameters Content</div>
-        <div className='tasks'>Tasks Content</div>
-        <div className='camera'>Camera Content</div> */}
-      </div>
-      {/* <Header className='header'/>
-      <Sidebar className='sidebar'/> */}  
-      {/* <Notification className="notification"/>
-      <Parameters className="parameters"/>
-      <Tasks className="tasks"/>
-      <Camera className="camera"/> */}
+        <div className='dashboard'>
+          <Route path="/notifications" component={Notification}>
+            {/* <Notification/> */}
+          </Route>
+          <Route path="/parameters" component={Parameters}>
+            {/* <Parameters/> */}
+          </Route>
+        </div>
+      </Router>
     </div>
   );
 }
